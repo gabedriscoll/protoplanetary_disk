@@ -111,7 +111,7 @@ def process_model(modelImagePath, gaussian = True):
     
     image_model = image_model[int(center_model[0] - 281/2):int(center_model[0] + 281/2),int(center_model[1] - 281/2):int(center_model[1] + 281/2)]
     # the rotated image has dimensions greater than the unrotated image (the square is tipped onto a corner), so this trims it back to the original size.
-    # no relevant data from the model is lost from cropping - the only things that get cropped should be nans at this point
+    # no relevant data from the model is lost from cropping - the only things that get cropped should be nans & the original corners at this point
     
     if gaussian:
         blurred_image_model = gaussian_filter(image_model, sigma=1) # smooth the model
