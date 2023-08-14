@@ -1,3 +1,6 @@
+"""
+Uploads images produced by other programs to folders in my Google Drive.
+"""
 from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 import os
