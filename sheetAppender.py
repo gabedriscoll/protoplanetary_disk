@@ -1,3 +1,6 @@
+"""
+Program that writes the SED chi-squared value to a spreadsheet in my Google Drive.
+"""
 def main(modelname, chival):
     import gspread
     from pydrive.auth import GoogleAuth
