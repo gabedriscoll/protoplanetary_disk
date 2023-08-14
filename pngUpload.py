@@ -27,10 +27,6 @@ gauth.SaveCredentialsFile("credentials.json")
 
 drive = GoogleDrive(gauth)
 filetitle = uploadFile.split("/")[-1]
-# path = 'home/driscollg/Documents/pngTest'
-# f = drive.CreateFile({'title': 'spider-man.png'})
-# f.SetContentFile(os.path.join(path, 'spider-man.png'))
-# f.Upload()
 
 gfile = drive.CreateFile({'parents': [{'id': folderPath}]})
 gfile.SetContentFile(uploadFile)
